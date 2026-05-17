@@ -1,0 +1,25 @@
+/* LoginPage.css */
+
+/* Add a subtle shadow and clean background to the login card */
+.login-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #e0e0e0 !important; /* Overrides default bootstrap border */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Make the shadow slightly deeper when the user hovers over the card */
+.login-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure the inputs have a nice focus effect */
+.login-card .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Styling for the error message to ensure it doesn't shift layout */
+.login-card span {
+    margin-top: 5px;
+}
