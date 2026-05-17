@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // NEW: Import useNavigate and your AppContext
 import { useNavigate } from 'react-router-dom'; 
-import { useAppContext } from '../context/AppContext'; // Update this path if your context file is located elsewhere
+import { useAppContext } from '../../context/AuthContext'; // <--- FIXED PATH AND FILENAME
 import './RegisterPage.css';
 
 function RegisterPage() {
@@ -113,25 +113,4 @@ function RegisterPage() {
                             />
                         </div>
 
-                        {/* Task 6: Display error message to end user */}
-                        {/* Placing it right above the button is standard practice */}
-                        {showerr && (
-                            <div className="text-danger mb-3">{showerr}</div>
-                        )}
-
-                        {/* Button that performs the `handleRegister` function on click */}
-                        <button className="btn btn-primary w-100 mb-3" onClick={handleRegister}>
-                            Register
-                        </button>
-
-                        <p className="mt-4 text-center">
-                            Already a member? <a href="/app/login" className="text-primary">Login</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-export default RegisterPage;
+                        {/* Task 6: Display error message to end user
