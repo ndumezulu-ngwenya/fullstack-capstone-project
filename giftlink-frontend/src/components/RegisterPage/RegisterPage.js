@@ -64,7 +64,6 @@ function RegisterPage() {
                     <div className="register-card p-4 border rounded">
                         <h2 className="text-center mb-4 font-weight-bold">Register</h2>
 
-                        {/* Input elements for all variables */}
                         <div className="mb-4">
                             <label htmlFor="firstName" className="form-label">First Name</label><br />
                             <input
@@ -113,4 +112,22 @@ function RegisterPage() {
                             />
                         </div>
 
-                        {/* Task 6: Display error message to end user
+                        {showerr && (
+                            <div className="text-danger mb-3">{showerr}</div>
+                        )}
+
+                        <button className="btn btn-primary w-100 mb-3" onClick={handleRegister}>
+                            Register
+                        </button>
+
+                        <p className="mt-4 text-center">
+                            Already a member? <a href="/app/login" className="text-primary">Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default RegisterPage;
