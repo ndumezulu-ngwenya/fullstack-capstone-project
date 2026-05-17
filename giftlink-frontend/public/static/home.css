@@ -1,4 +1,4 @@
-/* Task 1: Style the body */
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -11,7 +11,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Task 2: Create a pseudo-element for the background and blur */
 body::before {
     content: ""; /* Required to make the pseudo-element visible */
     position: fixed;
@@ -26,7 +25,7 @@ body::before {
     z-index: -1; /* Ensures the background stays behind the content */
 }
 
-/* Task 3: Style the content area */
+
 .content {
     position: relative;
     z-index: 1; /* Ensures content is above the blurred background */
@@ -39,8 +38,7 @@ body::before {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
 }
 
-/* Task 4: Add styles for headings, paragraphs, and buttons */
-/* It is best practice to separate these out for individual control */
+
 h1 {
     font-size: 3rem;
     font-weight: 700;
